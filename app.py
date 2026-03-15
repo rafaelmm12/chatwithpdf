@@ -54,7 +54,7 @@ def get_chat_model(model_name):
     """Get the chat model based on the selected model name."""
     if model_name == "gpt-3.5-turbo":
         return ChatOpenAI(
-            api_key=st.secrets("OPENAI_API_KEY"),
+            api_key=st.secrets[OPENAI_API_KEY"],
             model=model_name,
             streaming=True,
         )
