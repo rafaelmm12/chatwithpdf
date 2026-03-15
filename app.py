@@ -3,7 +3,6 @@ import os
 import shutil
 import tempfile
 import streamlit as st
-from dotenv import load_dotenv
 from langchain.schema import HumanMessage, AIMessage, SystemMessage
 from langchain_ollama import ChatOllama, OllamaEmbeddings
 from langchain_openai import ChatOpenAI
@@ -12,9 +11,6 @@ from langchain_community.document_loaders import PyPDFLoader
 from langchain_community.vectorstores import Chroma
 from langchain.memory import ConversationBufferMemory
 from langchain.chains import ConversationalRetrievalChain
-
-# Load environment variables
-load_dotenv()
 
 
 # ----------------------- App Configuration -----------------------
