@@ -1,7 +1,11 @@
-streamlit
-ollama
-langchain >= 0.2
-langchain-community >= 0.2
-langchain-openai >= 0.1
-langchain-ollama >= 0.1
-chromadb >= 0.5
+streamlit>=1.32
+
+langchain>=0.2
+langchain-community>=0.2
+langchain-openai>=0.1
+langchain-ollama>=0.1
+langchain-text-splitters>=0.2
+
+chromadb>=0.5
+pypdf>=4.0
+tiktoken>=0.6
